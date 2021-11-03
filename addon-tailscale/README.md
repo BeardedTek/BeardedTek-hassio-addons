@@ -1,4 +1,6 @@
-# Home Assistant Community Add-on: Tailscale
+# BeardedTek HASSIO Addon: Tailscale (unstable)
+
+- Forked from Home Assistant Community Add-on: Tailscale
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
