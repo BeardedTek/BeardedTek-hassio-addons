@@ -1,8 +1,8 @@
 {
   "name": "Garage Door Opener",
-  "version": "1.3",
+  "version": "0.1",
   "panel_icon": "mdi:garage",
-  "panel_title": "Garage",
+  "panel_title": "garageCTL",
   "slug": "garagectl",
   "description": "Proxy addon for GarageCtl",
   "url": "https://github.com/beardedtek.com/garagectl",
