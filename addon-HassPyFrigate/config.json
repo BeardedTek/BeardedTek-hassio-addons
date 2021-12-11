@@ -1,0 +1,36 @@
+{
+  "name": "garageCTL",
+  "version": "0.1",
+  "panel_icon": "mdi:cctv",
+  "panel_title": "HassPyFrigate",
+  "slug": "hasspyfrigate",
+  "description": "Nicer Notifications for Frigate Events",
+  "url": "https://github.com/BeardedTek/HassPyFrigate",
+  "startup": "application",
+  "boot": "auto",
+  "webui": "http://[HOST]:[PORT:5000]/",
+  "watchdog": "http://[HOST]:[PORT:5000]/",
+  "ingress": false,
+  "ingress_port": 8001,
+  "ingress_entry": "/",
+  "panel_admin": false,
+  "ports": {
+    "80/tcp": 8001
+  },
+  "ports_description": {
+    "80/tcp": "Web interface (Not required for Hass.io Ingress)"
+  },
+  "host_network": false,
+  "devices": [],
+  "usb": false,
+  "tmpfs": false,
+  "full_access": false,
+  "environment": {}
+  },
+  "schema": {
+    "server": "match(^.+:\\d+$)"
+  },
+  "services": [],
+  "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
+  "map": []
+}
