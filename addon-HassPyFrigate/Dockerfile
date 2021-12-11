@@ -8,7 +8,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base
 # hadolint ignore=DL3003
 RUN apt-get -qq update \
-    && apt-get -qq install -y python3 python-is-python3 apache2 \
+    && apt-get -qq install -y python3 python-is-python3 apache2 git \
     && (apt-get autoremove -y; apt-get autoclean -y)
 
 # Copy root filesystem
