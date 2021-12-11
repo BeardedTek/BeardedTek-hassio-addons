@@ -1,12 +1,11 @@
-# Home Assistant Add-on: garageCTL Proxy
+# HassPyFrigate
+## Nicer Frigate Notifications
 
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
 
-This addon creates a proxy to a garageCTL server run separately from Home Assistant so that you can have the benefit of access in the sidebar without running garageCTL as an addon.
+Apache2 + Python3 + https://github.com/beardedtek/hasspyfrigate release v0.1
 
-Note that this addon does not run garageCTL itself.
-
-[garageCTL]: https://github.com/beardedtek/garagectl/
+[HassPyFrigate]: https://github.com/beardedtek/hasspyfrigate
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
