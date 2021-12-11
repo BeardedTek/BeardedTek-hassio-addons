@@ -13,8 +13,10 @@ RUN apt-get -qq update \
 
 # Copy root filesystem
 COPY rootfs /
-RUN chown -R root.www-data /var/www/html
-RUN chmod -R 0755 /var/www/html
+RUN chown -R root.www-data /var/www/html \
+&& chmod -R 0755 /var/www/html \
+&& a2enmod cgid \
+&& service apache2 restart
 # Build arguments
 ARG BUILD_ARCH
 ARG BUILD_DATE
