@@ -13,7 +13,8 @@ RUN apt-get -qq update \
 
 # Copy root filesystem
 COPY rootfs /
-
+chown -R root.www-data /var/www/html
+chmod -R 0755 /var/www/html
 # Build arguments
 ARG BUILD_ARCH
 ARG BUILD_DATE
