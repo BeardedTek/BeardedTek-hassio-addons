@@ -6,7 +6,7 @@
 # HassPyFrigate
 ## Python 3 CGI script for better looking notifications
 ![v0.1][screenshot]
-[screenshot]: https://github.com/beardedtek/hasspyfrigate/img/HassPyFrigate.png
+g
 
 # Home Assistant Automations
 
@@ -14,7 +14,6 @@
 #### Example Android Actionable Notification
 Click on "Event Viewer" to view HassPyFrigate Event Viewer
 ![Android Actionable Notification][notification]
-[notification]: https://github.com/beardedtek/hasspyfrigate/img/AndroidNotification.png
 The following Automation will send an actionable notification to the android companion app (Should work with iOS as well)
 ```
 alias: HassPyFrigate Alert
@@ -62,3 +61,5 @@ mode: single
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[screenshot]: https://github.com/beardedtek/hasspyfrigate/img/HassPyFrigate.png
+[notification]: https://github.com/beardedtek/hasspyfrigate/img/AndroidNotification.png
