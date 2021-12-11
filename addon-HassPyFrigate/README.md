@@ -61,5 +61,5 @@ mode: single
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[screenshot]: https://github.com/beardedtek/hasspyfrigate/img/HassPyFrigate.png
-[notification]: https://github.com/beardedtek/hasspyfrigate/img/AndroidNotification.png
+[screenshot]: https://github.com/BeardedTek/HassPyFrigate/raw/main/img/HassPyFrigate.png
+[notification]: https://github.com/beardedtek/hasspyfrigate/raw/main/img/AndroidNotification.png
