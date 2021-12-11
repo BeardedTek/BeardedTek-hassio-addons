@@ -25,7 +25,7 @@
   "usb": false,
   "tmpfs": false,
   "full_access": false,
-  "environment": {}
+  "environment": {},
   "schema": {
     "server": "match(^.+:\\d+$)"
   },
