@@ -26,7 +26,6 @@
   "tmpfs": false,
   "full_access": false,
   "environment": {}
-  },
   "schema": {
     "server": "match(^.+:\\d+$)"
   },
