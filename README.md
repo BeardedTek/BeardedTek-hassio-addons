@@ -15,13 +15,9 @@ My modified hassio-addons.
 
 ![v0.1](https://github.com/BeardedTek/HassPyFrigate/raw/main/img/HassPyFrigate.png)
 
-# SERVER SIDE SETUP
+# SETUP
 
- * This will run on a standard installation of Apache2.  Place /html/cgi-bin/hasspyfrigate.py in your cgi-bin location 
-
-#### (/usr/lib/cgi-bin is the default on Ubuntu)
-
-* Place /html/css/hasspyfrigate.css into any web accessible folder (<html_root>/css preferred)
+In Home Assistant Supervisor, add this repository, select and install HassPyFrigate
 
 # Home Assistant Automations
 
@@ -99,7 +95,7 @@ action:
 
             uri: >-
 
-              http://YOUR_SERVER/cgi-bin/hasspyfrigate.py?id={{trigger.payload_json['after']['id']}}&camera={{trigger.payload_json['after']['camera']}}&bbox=true&url=https://hass.jeandr.net/api/frigate/notifications/&time={{trigger.payload_json['after']['start_time']}}&css=../css/hasspyfrigate.css#
+              http://HOME_ASSISTANT_URL:8001/cgi-bin/hasspyfrigate.py?id={{trigger.payload_json['after']['id']}}&camera={{trigger.payload_json['after']['camera']}}&bbox=true&url=https://hass.jeandr.net/api/frigate/notifications/&time={{trigger.payload_json['after']['start_time']}}&css=../css/hasspyfrigate.css#
 
         image: >-
 
@@ -112,3 +108,4 @@ action:
 mode: single
 
 ```
+## IMPORTANT
