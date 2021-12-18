@@ -109,3 +109,5 @@ mode: single
 
 ```
 ## IMPORTANT
+If you use NGINX or similar proxy methods, you will need to add a new proxy host for port 8001 on your home assistant url.
+Personally, I have a $5 linode set up with tailscale to my HA instance and nginx proxying both my home assistant, and my hasspyfrigate.
