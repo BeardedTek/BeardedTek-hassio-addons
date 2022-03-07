@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Runs the Nginx daemon
+# ==============================================================================
+
+bashio::log.info "Starting Apache..."
+exec /etc/init.d/apache2 start

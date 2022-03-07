@@ -1,26 +1,54 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:11.0.0
+ARG BUILD_ARCH
 # hadolint ignore=DL3006
-FROM ${BUILD_FROM}
-ENV LANG C.UTF-8
+FROM ghcr.io/hassio-addons/debian-base/${BUILD_ARCH}:5.1.0
 
-# Create directory for apache2 to store PID file
-RUN mkdir /run/apache2
+# Set shell
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-RUN apk --no-cache add apache2 libxml2-dev apache2-utils apache2-mod-wsgi apache2-ssl py3-pip
+# Setup base
+# hadolint ignore=DL3003
+RUN apt-get -qq update \
+    && apt-get -qq install -y python3 python3-pip python-is-python3 apache2 git\
+    && (apt-get autoremove -y; apt-get autoclean -y) \
+    && apt-get install pip \
+    && apt
 
-# python-is-python3
-RUN ln -s /usr/bin/python3 /usr/bin/python
+# Install python dependencies
+RUN pip install pytz && \
+    pip install python-dateutil && \
+    pip install requests && \
+    pip install Pillow
 
-# Copy app
-COPY app /var/www
+# Copy root filesystem
+COPY rootfs /
+RUN chown -R 33:1000 /var/www \
+&& chmod -R 0755 /var/www \
+&& a2enmod cgid \
+&& service apache2 restart
+# Build arguments
+ARG BUILD_ARCH
+ARG BUILD_DATE
+ARG BUILD_DESCRIPTION
+ARG BUILD_NAME
+ARG BUILD_REF
+ARG BUILD_REPOSITORY
+ARG BUILD_VERSION
 
-#Configure Logging
-RUN sed -i -r 's@Errorlog .*@Errorlog /dev/stderr@i' /etc/apache2/httpd.conf
-RUN echo "Transferlog /dev/stdout" >> /etc/apache2/httpd.conf
-
-# Copy data for add-on
-COPY run.sh /
-COPY index.html /
-RUN chmod a+x /run.sh
-RUN chmod a+x /index.html
-CMD [ "/run.sh" ]
+# Labels
+LABEL \
+    io.hass.name="${BUILD_NAME}" \
+    io.hass.description="${BUILD_DESCRIPTION}" \
+    io.hass.arch="${BUILD_ARCH}" \
+    io.hass.type="addon" \
+    io.hass.version=${BUILD_VERSION} \
+    maintainer="The Bearded Tek <kenny@beardedtek.com>" \
+    org.opencontainers.image.title="${BUILD_NAME}" \
+    org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
+    org.opencontainers.image.vendor="BeardedTek Addons" \
+    org.opencontainers.image.authors="The Bearded Tek <kenny@beardedtek.com>" \
+    org.opencontainers.image.licenses="MIT" \
+    org.opencontainers.image.source="https://github.com/BeardedTek-com/fEVR/" \
+    org.opencontainers.image.documentation="https://github.com/BeardedTek-com/fEVR/" \
+    org.opencontainers.image.created=${BUILD_DATE} \
+    org.opencontainers.image.revision=${BUILD_REF} \
+    org.opencontainers.image.version=${BUILD_VERSION}
