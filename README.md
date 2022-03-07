@@ -5,7 +5,8 @@ My modified hassio-addons.
   - tailscale 1.17.68 : This allows better subnet routing that the community hassio version.
   - GarageCTL Proxy : This allows you to run GarageCTL with INGRESS access. 
     - https://github.com/BeardedTek/garagectl
-  - HassPyFrigate : Nicer Looking Frigate Notifications
+  - HassPyFrigate : Nicer Looking Frigate Notifications (DEPRICATED)
+  - fEVR 0.3 : Rebuild of HassPyFrigate but WAY better
    
 # HassPyFrigate
  - https://github.com/beardedtek/HassPyFrigate
