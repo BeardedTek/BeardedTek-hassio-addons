@@ -1,0 +1,5 @@
+
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Bearded Tek HASSIO Addons
+url: 'https://github.com/BeardedTek/BeardedTek-hassio-addons'
+maintainer: William Kenny <kenny@beardedtek.com>
