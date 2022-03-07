@@ -1,0 +1,138 @@
+body{
+    background: #333338;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+#chores{
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    padding: 10px;
+    border: solid 1px silver;
+    border-radius: 10px;
+    background-color: #111314;
+    color: silver;
+    overflow: hidden;
+    height: 40px;
+    width: 240px;
+    padding: 10px;
+    transition: height 0.5s ease, width 0.5s ease;
+}
+#chores a{
+    color: silver;
+    font-size: 1.5em;
+}
+.toggleChores{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 102px;
+    position: relative;
+    left: 69px;
+}
+.toggleChores:hover{
+    cursor: pointer;
+}
+.chore{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content:flex-start space-evenly;
+    align-items:flex-start;
+    min-width: 1000px;
+    margin: auto;
+}
+.label{
+    font-weight: bolder;
+    font-size: 1.25em;
+    padding-bottom: 0.5em;
+}
+.labels{
+    padding-top: 10px;
+}
+.category{
+    display: block;
+    min-width: 100px;
+    width: 10vw;
+    border: solid 1px silver;
+}
+.categoryItem{
+    font-size: 1.25em;
+}
+.name{
+    display: block;
+    min-width: 150px;
+    width: 10vw;
+    border: solid 1px silver;
+}
+.nameItem{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.description{
+    display: block;
+    min-width: 425px;
+    width: 20vw;
+    border: solid 1px silver;
+}
+.disabled{
+    display: none;
+    font-weight: unset;
+    text-decoration: line-through;
+}
+.reset{
+    position: relative;
+    top: 475px;
+    width: 150px;
+    height: 150px;
+    background-color: #145211;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reset a{
+    color: silver;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+.reset:hover{
+    cursor: pointer;
+}
+.reset span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.the_wheel{
+    margin-top: -80px;
+}
+.flipper{
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 19px);
+}
+.who{
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    background: #111314;
+    border: solid 1px silver;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: center;
+    width: 240px;
+    height: 40px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+.who a{
+    color: silver;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+.selector a{
+    font-size: 1.5em;
+}

@@ -1,0 +1,15 @@
+            </div>
+            <div class="who" id="who">
+                <span class='selector'>
+                    <a href="#" onClick="toggleWho()">Wheel Selector</a>
+                </span>
+                <span class='kids'>
+                    <a href="?kid=megan">Megan</a><br/>
+                    <a href="?kid=logan">Logan</a><br/>
+                    <a href="?kid=william">William</a><br/>
+                    <a href="?kid=ember">Emberlynn</a>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>

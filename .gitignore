@@ -1,0 +1,8 @@
+config.json
+fEVR.sqlite
+events
+www/html/cgi-bin/__pycache__/
+events/*-*
+backup/*
+*.log
+*.mp4

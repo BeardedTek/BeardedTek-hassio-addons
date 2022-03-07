@@ -1,0 +1,42 @@
+body{
+    background: darkslategrey
+}
+.category{
+    width: 9vw;
+    border: 1px black;
+}
+.name{
+    width: 9vw;
+    border: 1px black;
+}
+.description{
+    width: 9vw;
+    border: 1px black;
+}
+.momma{
+    width: 9vw;
+    border: 1px black;
+}
+.kenny{
+    width: 9vw;
+    border: 1px black;
+}
+.megan{
+    width: 9vw;
+    border: 1px black;
+}
+.logan{
+    width: 9vw;
+    border: 1px black;
+}
+.william{
+    width: 9vw;
+    border: 1px black;
+}
+.ember{
+    width: 9vw;
+    border: 1px black;
+}
+.disabled{
+    background-color: red;
+}

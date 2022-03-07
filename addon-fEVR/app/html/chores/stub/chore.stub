@@ -1,0 +1,5 @@
+<div class='chore'>
+    <span class='nameItem #name#'>#NAME#</span>
+    <span class='categoryItem #category#'>#CATEGORY#</span>
+    <span class='descriptionItem #description#'>#DESCRIPTION#</span>
+</div>

@@ -1,0 +1,9 @@
+<html>
+<head>
+<title>Wheel of Chores</title>
+<link rel='stylesheet' href='/css/chores.css'/>
+<script type='text/javascript' src='/js/chores.js'></script>
+        <script type="text/javascript" src="/js/winwheel.js"></script>
+        <script src="/js/TweenMax.min.js"></script>
+</head>
+<body>

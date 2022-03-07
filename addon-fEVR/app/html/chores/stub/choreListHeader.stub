@@ -1,0 +1,10 @@
+<div>
+    <div id="chores">
+        <div class="toggleChores" id="toggleChores" onclick='toggleChores()'>
+            <a>Chore List</a>
+        </div>
+        <div class='chore labels'>
+            <span class='name label'>Chore</span>
+            <span class='category label'>Category</span>
+            <span class='description label'>Description</span>
+        </div>
